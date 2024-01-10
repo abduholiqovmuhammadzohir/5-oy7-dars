@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>7-dars</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center my-5">Add Product page</h1>
+        <form id="form">
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <label for="exampleFormControlInput1" class="form-label">Name *</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name...">
+                  </div>
+    
+                  <div class="mb-3 col-6">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="price" placeholder="Enter price...">
+                  </div>
+            </div>
+
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <label for="color" class="form-label">Color</label>
+                    <select class="form-select" aria-label="Default select example" id="color">
+                        <option selected>Select color</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="orange">Orange</option>
+                        <option value="green">green</option>
+                      </select>
+                </div>
+    
+                  <div class="mb-3 col-6">
+                    <label for="type" class="form-label">Type</label>
+                    <select class="form-select" aria-label="Default select example" id="type">
+                        <option selected>Select type</option>
+                        <option value="iphone">Iphone</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="huawei">Huawei</option>
+                        <option value="redmi">Redmi</option>
+                      </select>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="picture" class="form-label">Picture</label>
+                <input type="text" class="form-control" id="picture" placeholder="Enter picture...">
+              </div>
+
+              <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" rows="3" placeholder="Enter description..."></textarea>
+              </div>
+
+            <button id="button" type="button" class="btn btn-primary w-25">Save</button>
+
+        </form>
+        <br>
+        <a href="/pages/filter.html">Filter</a>
+      </div>
+
+    <script src="./js/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

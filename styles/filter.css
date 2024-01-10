@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#product-list{
+    gap: -1px;
+}
+
+a{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
