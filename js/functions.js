@@ -83,10 +83,10 @@ function createCard(phone) {
                         <div class="card-body">
                           <h5 class="card-title fs-3">${phone.name}</h5>
                           <div class="d-flex justify-content-between">
-                            <p class="card-text"><small class="text-danger fs-5">${phone.price}</small></p>
+                            <p class="card-text"><small class="text-danger fs-5">${phone.price}$</small></p>
                             <p class="card-text"><small class="text-primary fs-5">${phone.type}</small></p>
                           </div>
-                          <p class="card-text"><small class="text-warning style="color:${phone.color}" fs-5">${phone.color}</small></p>
+                          <p class="card-text"><small class="text-warning fs-5">${phone.color}</small></p>
                           <p class="card-text fs-6">${phone.description}</p>
                         </div>
                       </div>

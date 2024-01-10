@@ -39,6 +39,7 @@ button && button.addEventListener('click', function(e){
     if (search.value) {
         filter.search = search.value;
     }
+    
 
      let filterData = JSON.parse(JSON.stringify(data));
      if (filter.color) {
@@ -66,10 +67,30 @@ button && button.addEventListener('click', function(e){
      }
 
      if (filter.search) {
-        filterData = filterData.filter( el => {
-            return el.search <= filter.search
+        filterData = filterData.filter(el => {
+            if (el.name.includes(filter.search)) {
+                return el.name.includes(filter.search) == true
+            }
+            
+            else if (el.description.includes(filter.search)) {
+                return el.description.includes(filter.search) == true
+            }
+            
+            else if (el.type.includes(filter.search)) {
+                return el.type.includes(filter.search) == true
+            }
+            
+            else if (el.price.includes(Number(filter.search))) {
+                return el.price.includes(Number(filter.search)) == true
+            }
+
+            else if (el.color.includes((filter.search).toLowerCase())) {
+                return el.color.includes((filter.search).toLowerCase()) == true
+            }
         })
      }
+
+
    
 
      wrapper.innerHTML = '';
